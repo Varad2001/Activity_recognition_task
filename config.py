@@ -17,7 +17,7 @@ MODEL_PATH = os.path.join(os.getcwd(), 'models', 'Activity_recognition.h5')
 def get_labels():
 
     labels_path = tf.keras.utils.get_file(
-                fname=os.path.join(os.getcwd(), 'static', 'labels.txt'),
+                fname=os.path.join(os.getcwd(),  'labels.txt'),
                 origin=config.TENSORFLOW_HUB_URL_LABELS
                 )
     
