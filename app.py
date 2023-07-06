@@ -24,6 +24,6 @@ vd = gr.components.Video()
 logging.info(">>> Launching the gradio app...  ")
 
 iface = gr.Interface(fn=get_predictions, inputs=vd, outputs=label)
-iface.launch(share=True)
+iface.launch()
 
 logging.info(">>> Launched successfully.")
